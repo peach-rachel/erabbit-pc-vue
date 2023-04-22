@@ -5,7 +5,7 @@ import user from './modules/user'
 import category from './modules/category'
 
 export default createStore({
-  modules:{
+  modules: {
     cart,
     user,
     category

@@ -1,15 +1,16 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-const Layout = () => import ('@/views/Layout')
-const Home = () => import ('@/views/home')
+const Layout = () => import('@/views/Layout')
+// const Home = ()=> import ('@/views/home/index')
+import Home from '@/views/home/index.vue'
 
 const routes = [
   // 一级路由布局容器
   {
-    path:'/',
-    component:Layout,
-    chilren:[
-      {path:'/',component:Home}
+    path: '/',
+    component: Layout,
+    children: [
+      { path: '/', component: Home }
     ]
   }
 ]
