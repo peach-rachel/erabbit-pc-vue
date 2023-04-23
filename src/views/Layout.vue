@@ -2,7 +2,7 @@
   <!-- 顶部通栏 -->
   <AppNavBar/>
   <!-- 头部组件 -->
-  <header>头部组件</header>
+  <AppHeader/>
   <!-- 内容容器 -->
   <div class="main">
       <router-view></router-view>
@@ -13,9 +13,10 @@
 
 <script>
 import AppNavBar from '../components/app-navbar'
+import AppHeader from '../components/app-header'
 export default {
   name: 'Layout',
-  components:{AppNavBar},
+  components:{AppNavBar,AppHeader},
 }
 </script>
 
