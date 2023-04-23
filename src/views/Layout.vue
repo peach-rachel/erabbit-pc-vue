@@ -8,15 +8,16 @@
       <router-view></router-view>
   </div>
   <!-- 底部组件 -->
-  <footer>底部组件</footer>
+  <AppFooter/>
 </template>
 
 <script>
 import AppNavBar from '../components/app-navbar'
 import AppHeader from '../components/app-header'
+import AppFooter from '../components/app-footer'
 export default {
   name: 'Layout',
-  components:{AppNavBar,AppHeader},
+  components:{AppNavBar,AppHeader,AppFooter},
 }
 </script>
 
